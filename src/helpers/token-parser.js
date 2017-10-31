@@ -17,7 +17,7 @@ export default (req, res, next) => {
         return next();
     } else {
         let token = req.header(HeaderConstant.XSRF_TOKEN);
-        if (!token || !_ifTokenEffective(token, req.params[HeaderConstant.STUDENT_ID])) {
+        if (!token || !_ifTokenEffective(token/*, req.params[HeaderConstant.STUDENT_ID]*/)) {
             let err = new Error('Forbidden');
             err.status = 403;
             return next(err);

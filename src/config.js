@@ -4,7 +4,7 @@ export default {
     sys_ip: "127.0.0.1",
     sys_api_pathname: "api/v1",
     sys_host: "",
-    sys_allow_origin: "*",
+    sys_allow_origin: "",
 
     //
     nickname_pre_name: '大学生',
